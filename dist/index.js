@@ -45,9 +45,9 @@ var axios_1 = __importDefault(require("axios"));
 var app = (0, express_1.default)();
 app.use(cors());
 app.use(express_1.default.json());
-// app.get('/', (req: Request, res: Response)=>{
-//   return res.send('this is the respone from Node Backend')
-// })
+app.get('/', function (req, res) {
+    return res.send('this is the respone from Node Backend');
+});
 // app.get('/about', async(req: Request, res: Response) => {
 //    return  res.send('This is the reponse from Node js').status(200);
 // });
