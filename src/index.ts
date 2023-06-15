@@ -16,7 +16,6 @@ app.use(express.json())
 
 app.post('/data',(req: Request, res: Response)=>{
     const {input} = req.body;
-    console.log(input, 'asdflasdf')
     let fetchData=()=>{
         return axios.get('https://serpapi.com/search?engine=google_maps', {
             params: {

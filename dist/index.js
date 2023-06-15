@@ -53,7 +53,6 @@ app.use(express_1.default.json());
 // });
 app.post('/data', function (req, res) {
     var input = req.body.input;
-    console.log(input, 'asdflasdf');
     var fetchData = function () {
         return axios_1.default.get('https://serpapi.com/search?engine=google_maps', {
             params: {
